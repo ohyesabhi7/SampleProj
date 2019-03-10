@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20190306 22:28:54.531" generator="Robot 3.1.1 (Python 2.7.8 on win32)">
+<suite source="E:\Rob\SampleProj" id="s1" name="SampleProj">
+<suite source="E:\Rob\SampleProj\OR" id="s1-s1" name="OR">
+<suite source="E:\Rob\SampleProj\OR\practise.robot" id="s1-s1-s1" name="Practise">
+<test id="s1-s1-s1-t1" name="Test case 1">
+<kw name="login">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>http://demo.guru99.com/test/upload/</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20190306 22:28:55.295" level="INFO">Opening browser 'chrome' to base url 'http://demo.guru99.com/test/upload/'.</msg>
+<status status="PASS" endtime="20190306 22:29:07.363" starttime="20190306 22:28:55.295"></status>
+</kw>
+<kw name="Get Element Attribute" library="Selenium2Library">
+<doc>Returns value of ``attribute`` from element ``locator``.</doc>
+<arguments>
+<arg>//*[@id="uploadfile_0"]</arg>
+<arg>class</arg>
+</arguments>
+<assign>
+<var>${res}</var>
+</assign>
+<msg timestamp="20190306 22:29:07.744" level="INFO">${res} = upload_txt</msg>
+<status status="PASS" endtime="20190306 22:29:07.745" starttime="20190306 22:29:07.366"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>reslt is ${res}</arg>
+</arguments>
+<status status="PASS" endtime="20190306 22:29:07.747" starttime="20190306 22:29:07.746"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${res}'=='upload_txt'</arg>
+<arg>Log To Console</arg>
+<arg>hiii</arg>
+</arguments>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>hiii</arg>
+</arguments>
+<status status="PASS" endtime="20190306 22:29:07.751" starttime="20190306 22:29:07.750"></status>
+</kw>
+<status status="PASS" endtime="20190306 22:29:07.752" starttime="20190306 22:29:07.748"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${flag}'== 'Terue'</arg>
+<arg>Run Keywords</arg>
+<arg>passs</arg>
+<arg>ELSE</arg>
+<arg>nuetral</arg>
+</arguments>
+<kw name="nuetral">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>neutralllllllllllll</arg>
+</arguments>
+<status status="PASS" endtime="20190306 22:29:07.757" starttime="20190306 22:29:07.756"></status>
+</kw>
+<status status="PASS" endtime="20190306 22:29:07.757" starttime="20190306 22:29:07.754"></status>
+</kw>
+<status status="PASS" endtime="20190306 22:29:07.758" starttime="20190306 22:29:07.753"></status>
+</kw>
+<kw name="tp1">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>tpppppppp1111111</arg>
+</arguments>
+<status status="PASS" endtime="20190306 22:29:07.761" starttime="20190306 22:29:07.760"></status>
+</kw>
+<status status="PASS" endtime="20190306 22:29:07.762" starttime="20190306 22:29:07.759"></status>
+</kw>
+<status status="PASS" endtime="20190306 22:29:07.763" starttime="20190306 22:28:55.295"></status>
+</kw>
+<status status="PASS" endtime="20190306 22:29:07.764" critical="yes" starttime="20190306 22:28:55.295"></status>
+</test>
+<status status="PASS" endtime="20190306 22:29:07.769" starttime="20190306 22:28:54.999"></status>
+</suite>
+<status status="PASS" endtime="20190306 22:29:07.774" starttime="20190306 22:28:54.999"></status>
+</suite>
+<status status="PASS" endtime="20190306 22:29:07.777" starttime="20190306 22:28:54.952"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="SampleProj" pass="1">SampleProj</stat>
+<stat fail="0" id="s1-s1" name="OR" pass="1">SampleProj.OR</stat>
+<stat fail="0" id="s1-s1-s1" name="Practise" pass="1">SampleProj.OR.Practise</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
